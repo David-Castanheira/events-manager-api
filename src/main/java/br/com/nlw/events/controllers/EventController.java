@@ -13,8 +13,6 @@ import org.springframework.web.bind.annotation.RestController;
 import br.com.nlw.events.models.Event;
 import br.com.nlw.events.services.EventService;
 
-
-
 @RestController
 public class EventController {
     

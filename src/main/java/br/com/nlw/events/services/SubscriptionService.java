@@ -29,6 +29,10 @@ public class SubscriptionService {
     public SubscriptionResponse createNewSubscription(String eventName, User user, Integer userId) {
         // Recupera o evento pelo nome formatado
         Event event = eventRepository.findByPrettyName(eventName);
+        // Se o evento não existir, uma exceção é lançada
+        if (event == null) {
+            throw new EventNotFoundException("Evento " + eventName + " não existe");
+        }
 
         // Verifica se o usuário existe na base pelo e-mail cadastrado
         User userRec = userRepository.findByEmail(user.getEmail());
@@ -39,11 +43,6 @@ public class SubscriptionService {
         User indicator = userRepository.findById(userId).orElse(null); 
         if (indicator == null) {
             throw new UserIndicatorNotFoundException("Usuário " + userId + " indicador não existe");
-        }
-
-        // Se o evento não existir, uma exceção é lançada
-        if (event == null) {
-            throw new EventNotFoundException("Evento " + eventName + " não existe");
         }
 
         Subscription subs = new Subscription();

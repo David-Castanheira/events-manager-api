@@ -1,5 +1,6 @@
 # 🚧 API Events Manager - Em construção... 🚧
-Este projeto demonstra a construção de uma [API RESTful]([https://aws.amazon.com/pt/what-is/restful-api/]) robusta e eficiente utilizando principalmente a linguagem Java, o framework web Spring Boot e um banco de dados MySQL para o gerenciamento de eventos, assim como de inscrições, usuários indicadores, data e hora de início e término, entre outros. A API apresenta os principais endpoints para a construção de um arquitetura sólida baseada nas boas práticas.
+Este projeto demonstra a construção de uma [API RESTful]([https://aws.amazon.com/pt/what-is/restful-api/]) robusta e eficiente utilizando principalmente a linguagem Java, o framework web Spring Boot e um banco de dados MySQL para o gerenciamento de eventos, assim como de inscrições, usuários indicadores, data e hora de início e término, entre outros. 
+A API apresenta os principais endpoints para a construção de um arquitetura sólida baseada nas boas práticas.
 
 Para eventos:
 *   **[GET] /events:** Lista todos os eventos;
@@ -32,24 +33,20 @@ Para inscrições:
 A imagem representa o fluxo de requisições e dados em uma aplicação Spring Boot, desde o cliente (navegador) até o banco de dados MySQL. As camadas (controladores, serviços, repositórios e modelos) estão dispostas de forma organizada, facilitando a compreensão da estrutura da aplicação.
 
 1. Componentes principais:
+
 Cliente: O usuário que faz requisições através de um navegador (Chrome, Firefox, etc.);
-
 URL: A Uniform Resource Locator, ou "endereço web", que identifica o recurso solicitado;
-
 Controladores (Controllers): Os "porteiros" da aplicação, que recebem as requisições e as direcionam para os serviços apropriados;
-
 Serviços (Services): O "coração" da aplicação, onde residem as regras de negócio e a lógica de processamento;
-
 Repositórios (Repositories): Os "intermediários" entre os serviços e o banco de dados, responsáveis por persistir e recuperar dados;
-
 Modelos (Models): As representações das entidades de negócio, que refletem a estrutura do banco de dados;
-
 MySQL: O banco de dados relacional utilizado para armazenar os dados da aplicação.
 
 2. IOC e DI:
 A imagem destaca o papel fundamental do Spring Framework, que fornece a base para o Spring Boot, incluindo os recursos de Inversão de Controle (IoC) e Injeção de Dependência (DI). O Tomcat, um servidor web popular, também é mencionado como o ambiente de execução padrão para aplicações Spring Boot.
 
 3. Fluxo de requisição e resposta:
+
 A imagem ilustra o fluxo de requisição e resposta:
 - O cliente faz uma requisição através de uma URL;
 - A requisição é interceptada por um controlador;

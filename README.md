@@ -1,4 +1,4 @@
-# 🚧 API Events Manager - Em construção... 🚧
+# API Events Manager
 Este projeto demonstra a construção de uma [API RESTful]([https://aws.amazon.com/pt/what-is/restful-api/]) robusta e eficiente utilizando principalmente a linguagem Java, o framework web Spring Boot e um banco de dados MySQL para o gerenciamento de eventos, assim como de inscrições, usuários indicadores, data e hora de início e término, entre outros. 
 A API apresenta os principais endpoints para a construção de um arquitetura sólida baseada nas boas práticas.
 
